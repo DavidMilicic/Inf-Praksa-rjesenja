@@ -18,13 +18,26 @@ Opis:
 */
 
 //----------------RJEŠENJE ZADATAKA ------------
-
-
-
-
-
-
-
+function likes(imena) {
+  if (imena.length == 0) {
+    return "no one likes this";
+  }
+  for (let i = 0; i < imena.length; i++) {
+    let ostali = imena.length - 2;
+    if (imena.length == 1) {
+      return imena[0] + " likes this";
+    }
+    if (imena.length == 2) {
+      return imena[0] + " and " + imena[1] + " like this";
+    }
+    if (imena.length == 3) {
+      return imena[0] + ", " + imena[1] + " and " + imena[2] + " like this";
+    }
+    else {
+      return imena[0] + ", " + imena[1] + " and " + ostali + " others like this";
+    }
+  }
+}
 //---------------------------------------------------
 
 // Function Export

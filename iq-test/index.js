@@ -16,12 +16,33 @@
   */
 
 //----------------RJEŠENJE ZADATAKA ------------
+function iqTest(brojevi) {
+  const nizbrojeva = brojevi.split(" ");
+  var parni = 0;
+  var neparni = 0;
 
+  for (let i = 0; i < nizbrojeva.length; i++) {
+    paranNiz = nizbrojeva.filter(broj => broj % 2 === 0);
+    neparanNiz = nizbrojeva.filter(broj => broj % 2 !== 0);
 
+    var stringParanNiz = paranNiz.toString();
+    var stringNeParanNiz = neparanNiz.toString();
 
+    if (nizbrojeva[i] % 2 === 0) {
+      parni++;
+    }
+    if (nizbrojeva[i] % 2 !== 0) {
+      neparni++;
+    }
+  }
 
-
-
+  if (parni > neparni) {
+    return nizbrojeva.indexOf(stringNeParanNiz) + 1;
+  }
+  if (neparni > parni) {
+    return nizbrojeva.indexOf(stringParanNiz) + 1;
+  }
+}
 //---------------------------------------------------
 
 // Function Export

@@ -10,13 +10,21 @@
 */
 
 //----------------RJEŠENJE ZADATAKA ------------
-
-
-
-
-
-
-
+function invert(brojevi) {
+  let invert = [];
+  for (let i = 0; i < brojevi.length; i++) {
+    if (brojevi[i] > 0) {
+      invert.push(-Math.abs(brojevi[i]));
+    }
+    if (brojevi[i] < 0) {
+      invert.push(Math.abs(brojevi[i]));
+    }
+    if (brojevi[i] == 0) {
+      invert.push(0);
+    }
+  }
+  return invert;
+}
 //---------------------------------------------------
 
 // Function Export

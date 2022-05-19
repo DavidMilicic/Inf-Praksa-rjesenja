@@ -11,13 +11,14 @@
 */
 
 //----------------RJEŠENJE ZADATAKA ------------
-
-
-
-
-
-
-
+function sumDigits(broj) {
+  suma = 0
+  while (broj !== 0) {
+    suma += Math.abs(broj % 10);
+    broj = parseInt(broj / 10);
+  }
+  return suma
+}
 //---------------------------------------------------
 
 // Function Export

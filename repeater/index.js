@@ -8,13 +8,9 @@
 */
 
 //----------------RJEŠENJE ZADATAKA ------------
-
-
-
-
-
-
-
+function repeater(string, broj) {
+  return string.repeat(broj);
+}
 //---------------------------------------------------
 // Function Export
 module.exports = repeater
